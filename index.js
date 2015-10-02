@@ -7,10 +7,11 @@ var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = function (tree, options) {
   validateOptions(options);
+
   return mergeTrees([
-    makeDist('cjs')(transpileCJS(tree)),
-    makeDist('amd')(transpileAMD(tree)),
-    makeConcatDist('named-amd')(transpileNamedAMD(tree, options)),
+    // makeDist('cjs')(transpileCJS(tree)),
+    // makeDist('amd')(transpileAMD(tree)),
+    // makeConcatDist('named-amd')(transpileNamedAMD(tree, options)),
     makeDist('globals')(transpileGlobals(tree, options))
   ]);
 };
@@ -71,6 +72,3 @@ function concat(distDir) {
     });
   };
 }
-
-
-
