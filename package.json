@@ -20,10 +20,11 @@
     "broccoli-merge-trees": "^0.1.3"
   },
   "devDependencies": {
+    "babelify": "^6.3.0",
     "broccoli": "^0.12.0",
-    "mocha": "^1.17.1",
     "broccoli-cli": "^0.0.1",
-    "shelljs": "^0.2.6",
-    "chai": "^1.9.1"
+    "chai": "^1.9.1",
+    "mocha": "^1.17.1",
+    "shelljs": "^0.2.6"
   }
 }
